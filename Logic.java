@@ -32,6 +32,8 @@ public class Logic
         break;
       case "+10" :
         counter.add10();
+      case "Round10" :
+        counter.round10();
         break;
     }
   }
