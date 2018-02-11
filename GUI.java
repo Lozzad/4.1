@@ -54,7 +54,7 @@ public class GUI
     String buttonNames[] = {
             "Inc",  "Dec", "",   "",   "",    "Zero",
             "",     "",    "",   "",   "+5",  "" ,
-            "",     "",    "",   "",   "+10", "" };
+            "",     "",    "",   "",   "+10", "Round(10)" };
 
     // Lots of constants to define positions of components 
 
