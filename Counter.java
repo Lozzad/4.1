@@ -37,7 +37,13 @@ public class Counter
    */
   public void dec()
   {
-    cValue--; 
+    if (cValue>=1) 
+    {
+        cValue--;
+    } else 
+    {
+        System.out.print("Error: Value must be positive");
+    }
   }
 
   /**
