@@ -31,6 +31,13 @@ public class Test
       count.dec();
     }
 
+    setTest("Test positive()");
+    for( int i=0; i>=-MAX; i--)
+    {
+        assertTrue( count.getValue() == 0,
+        "Should be " + 0 + " is " + count.getValue() );
+        count.dec();
+    }
     setTest("Test inc()");
     count.inc();
     assertTrue( count.getValue() == 1,
@@ -62,7 +69,6 @@ public class Test
       assertTrue( count.getValue() == i*10,
                   "Should be " + i*10 + " is " + count.getValue() );
     }
-
 
     result();
 
