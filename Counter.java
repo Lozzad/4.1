@@ -62,19 +62,10 @@ public class Counter
     /**
      * Round to nearest 10
      */
-    public void round10()
+    public void round10() //doesnt work... yet!!!
     {
-        String sValue = Long.toString(cValue);
-        int length = sValue.length();
-        char endChar = sValue.charAt(length-1);
-        int endInt = Character.getNumericValue(endChar);
-        if (endInt>=1&&endInt<=4)
-        {
-            cValue-=endInt;
-        } 
-        else if (endInt>=5&&endInt<=9)
-        {
-            cValue+=(10-endInt);
-        }
+        double dValue = cValue/10;
+        System.out.println(dValue);
+        cValue = ((int)(dValue))*10;
     }
 }
