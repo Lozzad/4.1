@@ -64,8 +64,8 @@ public class Counter
      */
     public void round10() //doesnt work... yet!!!
     {
-        double dValue = cValue/10;
-        System.out.println(dValue);
-        cValue = ((int)(dValue))*10;
+        double dValue = cValue/10.0;
+        cValue = ((int)dValue)*10;
+        
     }
 }
