@@ -62,10 +62,16 @@ public class Counter
     /**
      * Round to nearest 10
      */
-    public void round10() //doesnt work... yet!!!
+    public void round10() //works!!
     {
         double dValue = cValue/10.0;
-        cValue = ((int)dValue)*10;
+        long numValue = cValue-((int)dValue)*10;
+        if (numValue<5) {
+            cValue-=numValue;
+        } else if (numValue>=5) {
+            cValue+=10-numValue;
+        }
+        
         
     }
 }
