@@ -1,15 +1,15 @@
 #BlueJ package file
-dependency1.from=Test
+dependency1.from=Logic
 dependency1.to=Counter
 dependency1.type=UsesDependency
-dependency2.from=Logic
+dependency2.from=GUI
 dependency2.to=Counter
 dependency2.type=UsesDependency
 dependency3.from=GUI
-dependency3.to=Counter
+dependency3.to=Logic
 dependency3.type=UsesDependency
-dependency4.from=GUI
-dependency4.to=Logic
+dependency4.from=Test
+dependency4.to=Counter
 dependency4.type=UsesDependency
 editor.fx.0.height=1056
 editor.fx.0.width=1936

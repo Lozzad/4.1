@@ -69,7 +69,22 @@ public class Test
       assertTrue( count.getValue() == i*10,
                   "Should be " + i*10 + " is " + count.getValue() );
     }
-
+    
+    if ( fail == 0)
+    {
+        setTest("Test Round10()");
+        count.reset();
+        count.add5();
+        count.round10();
+        assertTrue( count.getValue() == 10,
+                    "Should be 10 is " + count.getValue() );
+        count.reset();
+        count.add5();
+        count.dec();
+        count.round10();
+        assertTrue( count.getValue() == 0,
+                    "Should be 0 is " + count.getValue() );
+    }
     result();
 
   }
